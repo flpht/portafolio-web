@@ -1,17 +1,19 @@
+<!-- 
+    ARCHIVO: index.html 
+    (Versión 100% Responsiva)
+-->
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Noel Sanabria | Ingeniero Informático & Data Analyst</title>
 
     <meta name="description" content="Portafolio de Noel Sanabria, Ingeniero en Informática y experto en Automatización (RPA), Análisis de Datos y Business Intelligence en Santiago, Chile.">
-    
     <meta name="keywords" content="Noel Sanabria, Ingeniero Informático, Data Analyst, RPA, Python, Power BI, Santiago, Chile, Automatización">
     <meta name="author" content="Noel Sanabria">
 
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://noelsanabria.site/">
     <meta property="og:title" content="Noel Sanabria | Ingeniero & Data Analyst">
@@ -20,30 +22,37 @@
 
     <link rel="canonical" href="https://noelsanabria.site/">
 
+    <!-- Librerías -->
     <script src="https://unpkg.com/feather-icons"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    
-    </head>
 
+    <!-- CSS externo (antes estaba en <style>...</style>) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
 
     <nav>
         <div class="container nav-content">
-            <div class="logo">NOEL_SANABRIA<span style="color:var(--accent-primary)"></span></div>
-            <div class="nav-links">
-                <a href="#hero">Sobre mí</a>
-                <a href="#experience">Experiencia</a>
-                <a href="#certifications">Certificaciones</a>
-                <a href="#projects">Proyectos</a>
-                <a href="#contact">Contacto</a>
+            <div class="logo">NOEL_SANABRIA<span style="color:var(--accent-primary)">.py</span></div>
+            
+            <!-- Botón Hamburguesa para Móvil -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i data-feather="menu" style="width: 28px; height: 28px;"></i>
+            </div>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#hero" onclick="toggleMenu()">Sobre mí</a>
+                <a href="#experience" onclick="toggleMenu()">Experiencia</a>
+                <a href="#certifications" onclick="toggleMenu()">Certificaciones</a>
+                <a href="#projects" onclick="toggleMenu()">Proyectos</a>
+                <a href="#contact" onclick="toggleMenu()">Contacto</a>
             </div>
         </div>
     </nav>
 
     <section id="hero">
         <div class="container hero-grid">
-
+            
             <div class="hero-content">
                 <span class="badge">Disponible para nuevos retos</span>
                 <h1>
@@ -64,7 +73,7 @@
                 </div>
 
                 <div style="margin-top: 50px;">
-
+                    
                     <div class="skills-group">
                         <span class="skills-label">Tecnología & Automatización</span>
                         <div class="skills-container">
@@ -81,27 +90,15 @@
                             <div class="skill-tag data"><i data-feather="bar-chart-2"></i> Power BI</div>
                             <div class="skill-tag data"><i data-feather="grid"></i> Excel Avanzado</div>
                             <div class="skill-tag data"><i data-feather="database"></i> SQL Server / Oracle</div>
-                            <div class="skill-tag data"><i data-feather="pie-chart"></i> Análisis de Datos</div>
                         </div>
                     </div>
-
-                    <div class="skills-group">
-                        <span class="skills-label" style="color: var(--accent-secondary);">Competencias Clave</span>
-                        <div class="skills-container">
-                            <div class="skill-tag soft"><i data-feather="activity"></i> Pensamiento Analítico</div>
-                            <div class="skill-tag soft"><i data-feather="check-circle"></i> Toma de Decisiones</div>
-                            <div class="skill-tag soft"><i data-feather="users"></i> Liderazgo</div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
             <div class="profile-column">
                 <div class="profile-container">
                     <div class="profile-blob"></div>
-                    <img src="img/Noel.png"
-                        alt="Foto de Noel Sanabria" class="profile-img">
+                    <img src="img/Noel.png" alt="Foto de Noel Sanabria" class="profile-img">
                 </div>
             </div>
 
@@ -110,8 +107,7 @@
 
     <section id="experience">
         <div class="container">
-            <h2 style="font-size: 2.5rem; margin-bottom: 50px;">Trayectoria <span class="highlight">Profesional</span>
-            </h2>
+            <h2 style="font-size: 2.5rem; margin-bottom: 50px;">Trayectoria <span class="highlight">Profesional</span></h2>
 
             <div class="timeline">
 
@@ -126,15 +122,12 @@
                             <div class="job-date">2023 - Actualidad</div>
                         </div>
                         <p style="color: var(--text-muted); margin-bottom: 15px;">
-                            Liderando la transformación digital y el análisis de datos para la toma de decisiones
-                            estratégicas.
+                            Liderando la transformación digital y el análisis de datos para la toma de decisiones estratégicas.
                         </p>
                         <ul style="list-style-position: inside; color: var(--text-muted); line-height: 1.8;">
                             <li>Desarrollo de Apps en <strong>Power Apps</strong> para gestión de inventarios.</li>
-                            <li>Automatización de flujos con <strong>Power Automate</strong>, reduciendo tiempos
-                                manuales.</li>
-                            <li><strong>Integración de API Gemini</strong> para análisis inteligente de datos del
-                                negocio.</li>
+                            <li>Automatización de flujos con <strong>Power Automate</strong>, reduciendo tiempos manuales.</li>
+                            <li><strong>Integración de API Gemini</strong> para análisis inteligente de datos.</li>
                             <li>Administración de bases de datos y servidores Windows.</li>
                         </ul>
                     </div>
@@ -174,31 +167,28 @@
         </div>
     </section>
 
-   <section id="certifications">
+    <section id="certifications">
         <div class="container">
             <h2 style="font-size: 2.5rem; margin-bottom: 50px;">Credenciales & <span class="highlight">Cursos</span></h2>
 
-            <div class="cert-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px;">
+            <div class="cert-grid">
                 
                 <div class="glass-card">
                     
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <div class="cert-header">
                         <div style="display: flex; align-items: center; gap: 10px;">
-                            <div style="background: rgba(45, 212, 191, 0.1); padding: 10px; border-radius: 10px; border: 1px solid rgba(45, 212, 191, 0.2);">
+                            <div class="cert-icon">
                                 <i data-feather="award" style="color: var(--accent-tertiary); width: 24px; height: 24px;"></i>
                             </div>
-                             <div>
+                            <div>
                                 <h3 style="font-size: 1.2rem; margin: 0;">Análisis de Datos</h3>
                                 <p style="color: var(--accent-tertiary); font-family: 'JetBrains Mono'; font-size: 0.85rem; margin: 0;">IPS DATAX</p>
-                             </div>
+                            </div>
                         </div>
-                        <span style="font-family: 'JetBrains Mono'; font-size: 0.75rem; color: var(--text-muted); border: 1px solid var(--glass-border); padding: 4px 8px; border-radius: 20px;">
-                            Dic 2025
-                        </span>
+                        <span class="cert-date">Dic 2025</span>
                     </div>
 
-                    <div style="display: flex; gap: 20px; align-items: start; margin-bottom: 25px;">
-                        
+                    <div class="cert-content">
                         <div style="flex: 1;">
                             <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 15px; line-height: 1.5;">
                                 Programa intensivo de 50 horas sobre el ciclo de vida del dato: extracción, transformación y visualización estratégica.
@@ -210,11 +200,11 @@
                             </div>
                         </div>
 
-                        <div style="flex: 0 0 300px; position: relative;">
+                        <div class="cert-img-container">
                              <a href="https://hotmart.com/es/club/ipsdatax/product/5360147/certificate/77de29c3-0f0b-40fd-b3fc-4555720bec8d-376880001/validate" target="_blank">
                                 <img src="img/Certificado BI.png" 
                                      alt="Miniatura Certificado IPS DATAX" 
-                                     style="width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+                                     style="width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
                             </a>
                         </div>
                     </div>
@@ -237,56 +227,40 @@
 
             <div class="projects-grid">
 
+                <!-- Clickbot Destacado -->
                 <div class="glass-card featured-card">
                     <div class="featured-content">
-                        <div class="badge" style="border-color: var(--accent-primary); color: white;">PROYECTO ESTRELLA
-                        </div>
+                        <div class="badge" style="border-color: var(--accent-primary); color: white;">PROYECTO ESTRELLA</div>
                         <h3 style="font-size: 2rem; margin: 15px 0;">Clickbot</h3>
 
                         <p style="max-width: 800px; color: var(--text-muted); margin-bottom: 25px;">
                             Plataforma web que centraliza ventas e inventario, potenciada con un módulo de Business Intelligence y un Asistente Virtual con IA.
-
                         </p>
 
-                        <div
-                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: left; margin-bottom: 30px;">
-
+                        <!-- Detalles Técnicos en Grid -->
+                        <div class="project-details-grid">
                             <div>
-                                <h4 style="color: var(--accent-secondary); font-size: 1rem; margin-bottom: 8px;">Backend
-                                    & BD</h4>
+                                <h4 style="color: var(--accent-secondary); font-size: 1rem; margin-bottom: 8px;">Backend & BD</h4>
                                 <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem;">
                                     <li>• Python 3.10+ (Django)</li>
                                     <li>• PostgreSQL (Supabase)</li>
                                 </ul>
                             </div>
-
                             <div>
-                                <h4 style="color: var(--accent-tertiary); font-size: 1rem; margin-bottom: 8px;">IA &
-                                    Data</h4>
+                                <h4 style="color: var(--accent-tertiary); font-size: 1rem; margin-bottom: 8px;">IA & Data</h4>
                                 <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem;">
                                     <li>• Google Gemini API (NLP)</li>
                                     <li>• Prophet (Predicciones)</li>
                                     <li>• Metabase (BI)</li>
                                 </ul>
                             </div>
-
                             <div>
-                                <h4 style="color: var(--accent-primary); font-size: 1rem; margin-bottom: 8px;">Frontend
-                                </h4>
+                                <h4 style="color: var(--accent-primary); font-size: 1rem; margin-bottom: 8px;">Frontend</h4>
                                 <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem;">
                                     <li>• HTML5 / CSS3 / JS</li>
                                     <li>• Bootstrap 5</li>
                                 </ul>
                             </div>
-
-                            <div>
-                                <h4 style="color: white; font-size: 1rem; margin-bottom: 8px;">Infraestructura</h4>
-                                <ul style="list-style: none; color: var(--text-muted); font-size: 0.9rem;">
-                                    <li>• VPS Linux (Ubuntu)</li>
-                                    <li>• Nginx / Gunicorn</li>
-                                </ul>
-                            </div>
-
                         </div>
 
                         <div class="project-tags">
@@ -297,13 +271,13 @@
                         </div>
 
                         <div style="margin-top: 30px;">
-                            <a href="https://clickbot.store/" class="btn btn-primary">Ver Proyecto <i
-                                    data-feather="external-link"></i></a>
+                            <a href="https://clickbot.store/" class="btn btn-primary">Ver Proyecto <i data-feather="external-link"></i></a>
                             <a href="#" class="btn btn-outline" style="margin-left: 15px;">GitHub</a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Proyecto Secundario 1 -->
                 <div class="glass-card">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
                         <i data-feather="cpu" style="color: var(--accent-primary); width: 40px; height: 40px;"></i>
@@ -311,8 +285,7 @@
                     </div>
                     <h3>Integración IA Empresarial</h3>
                     <p style="color: var(--text-muted); margin: 15px 0;">
-                        Implementación de la API de Gemini (Google) para analizar datos de negocio y generar reportes
-                        automatizados en tiempo real.
+                        Implementación de la API de Gemini (Google) para analizar datos de negocio y generar reportes automatizados en tiempo real.
                     </p>
                     <div class="project-tags">
                         <span>API REST</span>
@@ -321,6 +294,7 @@
                     </div>
                 </div>
 
+                <!-- Proyecto Secundario 2 -->
                 <div class="glass-card">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
                         <i data-feather="grid" style="color: var(--accent-primary); width: 40px; height: 40px;"></i>
@@ -328,8 +302,7 @@
                     </div>
                     <h3>Dashboard Power BI & Apps</h3>
                     <p style="color: var(--text-muted); margin: 15px 0;">
-                        Visualización de datos clave y gestión de inventario mediante el ecosistema Power Platform para
-                        apoyar la toma de decisiones.
+                        Visualización de datos clave y gestión de inventario mediante el ecosistema Power Platform para apoyar la toma de decisiones.
                     </p>
                     <div class="project-tags">
                         <span>Power BI</span>
@@ -347,8 +320,7 @@
             <span class="highlight" style="font-size: 1.2rem; font-family: 'JetBrains Mono';">¿Hablamos?</span>
             <h2 style="font-size: 3rem; margin: 20px 0;">Vamos a crear algo increíble</h2>
             <p style="color: var(--text-muted); margin-bottom: 40px;">
-                Actualmente resido en <strong>Santiago, Centro</strong> y estoy disponible para proyectos de
-                automatización y análisis de datos.
+                Actualmente resido en <strong>Santiago, Centro</strong> y estoy disponible para proyectos de automatización y análisis de datos.
             </p>
             <a href="mailto:snoelantonio2003@gmail.com" class="btn btn-primary"
                 style="font-size: 1.2rem; padding: 18px 40px;">
@@ -366,13 +338,29 @@
     <footer>
         <div class="container">
             <p>Diseñado y Desarrollado por <strong>Noel Sanabria</strong> © 2025</p>
-            <p style="font-size: 0.8rem; margin-top: 10px; color: var(--text-muted);">Construido con HTML, CSS
-                Glassmorphism & Pasión</p>
+            <p style="font-size: 0.8rem; margin-top: 10px; color: var(--text-muted);">Construido con HTML, CSS Glassmorphism & Pasión</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Script Funcional para Menú e Iconos -->
+    <script>
+        // Inicializar Iconos
+        feather.replace();
+
+        // Lógica del Menú Móvil
+        function toggleMenu() {
+            const nav = document.getElementById('navLinks');
+            nav.classList.toggle('active');
+            
+            // Cambiar icono de menú si se desea (opcional)
+            // const icon = document.querySelector('.menu-toggle i');
+            // if(nav.classList.contains('active')) {
+            //     icon.replaceWith(feather.icons['x'].toSvg());
+            // } else {
+            //     icon.replaceWith(feather.icons['menu'].toSvg());
+            // }
+        }
+    </script>
 
 </body>
-
 </html>
